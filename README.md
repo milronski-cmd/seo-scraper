@@ -53,6 +53,7 @@ Voor echte veldmetingen via Google PageSpeed Insights: zet een (gratis) API-key 
 | Links-optimizer | PageRank-verdeling, orphans, anchor-advies, silo-structuur, breadcrumbs |
 | Doelgroep-lens | configureerbare checklist (bijv. leesbaarheid/fontgroottes) die meeweegt in de CRO-score |
 | Contrast-audit | WCAG-contrast per tekst-element, minimale fontgroottes, tekst-over-foto |
+| Site-health-audit | sitemap-gezondheid (4xx/redirects/canonical-mismatch per entry), unminified JS/CSS, invalid structured data (missende verplichte properties), pagina's zonder H1 of met dunne content — incl. `semrush-fixlijst.json` per site |
 
 Handige extra's: `_compare_from_runs.py` (vergelijk bestaande runs zonder opnieuw te scrapen) en
 `_verify_report.py` (rendert het rapport headless en checkt op fouten).

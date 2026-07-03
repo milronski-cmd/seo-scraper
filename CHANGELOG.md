@@ -1,5 +1,18 @@
 # CHANGELOG — seo_scraper_v2 (canoniek: shared\from-agent5\2026-06-11_seo-scraper-v2)
 
+## v2.4.0 — 2026-07-03 (Sage-2) — Semrush-pariteit (module 1.8, audits/semrush.py)
+- Nieuwe audit-module **`audits/semrush.py`** (registry, fail-soft) met de vier
+  Semrush Site-Audit-checks die we misten:
+  1. **Sitemap-gezondheid** — per sitemap-entry status (4xx/5xx), redirect (3xx + doel)
+     en canonical-mismatch (cap 150 URL's, HEAD met GET-fallback).
+  2. **Unminified JS/CSS** — first-party assets gedownload (cap 30, van 6 pagina's) en
+     geclassificeerd via .min./hash-naam, gem. regellengte en whitespace-ratio.
+  3. **Invalid structured data** — site-brede aggregatie van de bestaande per-pagina
+     `schema_validation`: invalid types + missende verplichte properties + pagina's.
+  4. **H1 & word count** — fixlijsten: pagina's met 0/>1 H1 en pagina's < 200 woorden.
+- Schrijft per site **`semrush-fixlijst.json`** (volledige, ongecapte itemlijsten)
+  naast de report-card — bron voor FIXLIJST-*.md's.
+
 ## v2.3.1 — 2026-07-02 (Sage) — render-metadata + design-audits (fase 1b)
 - Module 1.1 uitgebreid met **render-metadata-extractie** (EXTRACT_JS in
   screenshots.py): per pagina en per viewport de computed styles van alle

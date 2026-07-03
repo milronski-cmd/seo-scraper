@@ -48,7 +48,7 @@ Gebruik:
                  --concurrency N --psi [--psi-key KEY] --dup-threshold 0.80
                  --delay S (1.0) --no-images --no-render
 """
-__version__ = "2.3.1"  # fase 1b: render-meta + design-audits 1.3/1.4/1.7 + safe_name-hash
+__version__ = "2.4.0"  # semrush-pariteit: audits/semrush.py (sitemap-gezondheid, minificatie, schema-agg, H1/word-count-fixlijsten)
 import argparse
 import csv
 import gzip
